@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&display=swap');
+
+
+.button {
+    background-color: #f44336;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    border: 2px solid #f44336;
+    position: absolute;
+    left: 20.8cm;
+    top: 5.3cm;
+    top: 3.45cm;
+  }
+  
+/*button changes color and border when user hovers over button */
+.button:hover{
+    background-color: rgb(188, 229, 188);
+    color: white;
+    border: 2px solid rgba(255, 255, 128, 0.87);
+  }
+
+/*input box where user types */
+.input {
+  padding: 11.7px;
+  width: 6cm; 
+  margin-right: 7cm;
+  position: absolute;
+  left: 13.95cm;
+  bottom: 17cm;
+  background-color: rgb(230, 225, 225);
+  border-radius: 2px;
+  border: 1px solid rgb(230, 224, 224);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form {
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* adds shadow to card when user hovers over it */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* pokemon details from api on the front of card */
+.moves {
+  position: absolute;
+  top: 6.5cm;
+  vertical-align: middle;
+  font-size: 19px;
+  font-weight: normal;
+}
+
+/* first heading at the top of the page */
+.heading1{
+  font-size: 22px;
+  text-align: center;
+  position:absolute;
+  left: 13.4cm;
+  top: 0.7cm;
+}
+
+/* second heading at the top of the page */
+.heading2{
+  font-size: 25px;
+  text-align: center;
+  position:absolute;
+  left: 12.8cm;
+  top: 1.8cm;
+}
+
+/* pokemon picture on the front of the card */
+.imagesize { 
+position: absolute;
+bottom: 4.85cm;
+right: 0cm;
+border: 1.5px solid black;
+border-radius: 5px;
+background-color:beige;
+padding-right: 1cm;
+padding-left: 1.3cm;
+}
+
+/* pokemon picture on the back of the card */
+.imagesize2{
+position: absolute;
+bottom: 0.5cm;
+right: 0.87cm;
+border: 1.5px solid black;
+border-radius: 5px;
+background-color:beige;
+padding-right: 0.7cm;
+padding-left: 1cm;
+}
+
+/* name and id of pokemon */
+.namedata {
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 3.8cm;
+  right: 2.3cm;
+  justify-content: space-evenly;
+}
+
+.recentlysearchedcard {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 8cm;
+  height: 6cm;
+  padding: 1cm;
+  position: absolute;
+  left: 7.5cm;
+  bottom: 5.4cm;
+}
+
+/* red background of recently searched card */
+.cardbackground {
+  font-size: 20px;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0cm;
+  left: 0cm;
+  background-color: #f44336;
+  padding-left: 115px;
+  padding-right: 263px;
+  padding-bottom: 85px;
+}
+
+/* 'Recently searched' styling */
+.cardtitle{
+  font-size: 25px;
+  position: absolute; 
+  font-family: 'Brygada 1918';
+  font-weight: normal;
+  right: 2cm; 
+  top: 0.1cm;
+}
+
+/* recently searched pokemon 1,2, and 3 */
+.pokemon1{
+  font-size: 20px;  
+  position: absolute;
+  top: 3.5cm;
+}
+.pokemon2{
+  font-size: 20px;  
+  position: absolute;
+  top: 4.3cm;
+}
+.pokemon3{
+  font-size: 20px;  
+  position: absolute;
+  top: 5.1cm;
+}
+.text {
+  position: absolute;
+  bottom: 12cm;
+  left: 6cm;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 7.5cm;
+  height: 10.1cm;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+  padding: 0.7cm;
+  position: absolute;
+  left: 21cm;
+  bottom: 3.5cm;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: lightsalmon;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* text on the back of the card */
+.details{
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+}
